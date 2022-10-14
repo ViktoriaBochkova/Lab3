@@ -15,7 +15,7 @@ class Calculator:
         for RECORD in self.records:
             if RECORD.date == day_today:
                 summ += RECORD.amount
-            return summ
+        return summ
 
     def get_week_stats(self):
         week_sum = 0
@@ -67,7 +67,6 @@ class Record:
             self.date = dt.date.today()
 
 
-'''
 # создадим калькулятор денег с дневным лимитом 1000
 cash_calculator = CashCalculator(1000)
 
@@ -80,8 +79,7 @@ cash_calculator.add_record(Record(amount=300, comment='Серёге за обе�
 # а тут пользователь указал дату, сохраняем её
 cash_calculator.add_record(Record(amount=3000,
                                   comment='бар в Танин др',
-                                 date='08.11.2019'))
-print(cash_calculator.get_today_cash_remained(rub))
+                                  date='08.11.2019'))
+print(cash_calculator.get_today_cash_remained('rub'))
 # должно напечататься
 # На сегодня осталось 555 руб
- '''
