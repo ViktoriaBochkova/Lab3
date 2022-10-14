@@ -3,7 +3,6 @@ from datetime import datetime
 import CAlcul
 import pytest
 
-
 test_list = [{'amount': 1000, 'comment': 'что-то', 'date': '29.09.2021'},
              {'amount': 2000, 'comment': 'что-то'},
              {'amount': 100, 'comment': 'что-то', 'date': '14.10.2022'}]
